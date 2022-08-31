@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e7efec;
+  }
+  
+  .page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    &_title {
+      width: 740px;
+      height: 80px;
+      line-height: 80px;
+      font-size: 70px;
+      font-weight: 300;
+      margin-top: 40px;
+      margin-bottom: 25px;
+    }
+  }
+  
+  .create-search {
+    position: relative;
+    width: 740px;
+    height: 80px;
+    margin: auto;
+  
+    &__input {
+      padding-left: 70px;
+      padding-right: 220px;
+      font-size: 24px;
+      border: none;
+      outline: none;
+      width: 100%;
+      border-radius: 0 90px 0 0;
+      height: 80px;
+    }
+  
+    &__btn {
+      width: 200px;
+      font-size: 26px;
+      text-transform: uppercase;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: none;
+      font-weight: 700;
+      width: 200px;
+      background: #1eb7ee;
+      color: #fff;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+      border-radius: 0 80px 0 0;
+      text-align: left;
+      padding: 0 20px;
+      cursor: pointer;
+    }
+  }
+  
+  .fa-magnifying-glass {
+    position: absolute;
+    font-size: 35px;
+    left: 20px;
+    top: 22px;
+    color: #a4a4a4;
+  }
+  
+  .navigation {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    padding: 0px;
+    width: 1120px;
+    background-color: #1eb7ee;
+    border-radius: 65px 65px 0 0;
+    padding: 0px;
+  
+    &__item {
+      color: #fff;
+      background-color: #1eb7ee;
+      border-color: #dee2e6 #dee2e6 #fff;
+      border-radius: 60px 60px 0 0;
+      outline: none;
+      padding: 0;
+      border: 0;
+      font-size: 24px;
+      line-height: 60px;
+      text-decoration: none;
+      text-transform: uppercase;
+      list-style-type: none;
+      width: 560px;
+      text-align: center;
+  
+      a {
+        color: #fff;
+      }
+    }
+  
+    .navigation__item-selected {
+      color: #1eb7ee;
+      background-color: #fff;
+      border-radius: 60px 60px 0 0;
+      border: 1px solid #fff;
+  
+      a {
+        color: #1eb7ee;
+      }
+    }
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .fa-solid {
+    margin-right: 20px;
+  }
+  
+  .list-title {
+    background-color: #fff;
+  
+    &__board {
+      padding: 0px;
+      background-color: #fff;
+      display: flex;
+      margin: 0px;
+      list-style-type: none;
+  
+  
+      :nth-child(2) {
+        margin-left: 20px;
+      }
+      :nth-child(3) {
+        margin-left: 65px;
+      }
+      :nth-child(4) {
+        margin-left: 115px;
+      }
+      :nth-child(5) {
+        margin-left: 130px;
+      }
+      :nth-child(6) {
+        margin-left: 80px;
+      }
+    }
+  
+    &__item {
+      font-size: 18px;
+      margin-top: 70px;
+      width: 100px;
+      margin-left: 35px;
+      margin-bottom: 10px;
+      color: #a4a4a4;
+      text-align: center;
+    }
+  }
+  
+  .board-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  
+    &__item {
+      display: flex;
+      height: 80px;
+      line-height: 80px;
+      font-size: 20px;
+  
+      :nth-child(3) {
+        width: 180px;
+      }
+      :nth-child(4) {
+        width: 180px;
+      }
+      :nth-child(5) {
+        width: 200px;
+      }
+    }
+  }
+  .elmt {
+    display: block;
+    text-align: center;
+    width: 80px;
+    margin-left: 40px;
+  }
+  
+  .board-list > li:nth-child(odd) {
+    background-color: #9e9e9e1e;
+  }
+  .board-list > li:nth-child(even) {
+    background-color: #fff;
+  }
+  
+  .not-found {
+    display: flex;
+    justify-content: center;
+    background-color: #a4a4a424;
+    padding: 20px;
+    &__title {
+      color: #ff0000;
+      font-size: 22px;
+      font-weight: 500;
+    }
+  }
+  
+  .company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    &__image {
+      width: 80px;
+      height: 40px;
+    }
+  
+    &__name {
+      margin-left: 10px;
+    }
+  }
+  
+  .fa-a {
+    text-align: center;
+    font-size: 25px;
+    display: block;
+    line-height: 80px;
+    color: green;
+    margin: 0;
+  }
+  
+  .fa-d {
+    text-align: center;
+    font-size: 25px;
+    display: block;
+    line-height: 80px;
+    color: #00aaff;
+    margin: 0;
+  }
